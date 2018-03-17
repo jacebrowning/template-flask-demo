@@ -1,0 +1,17 @@
+__pycache__/
+/*.log
+.envrc
+
+################################################################################
+# Python
+
+# Project files
+/.venv/
+
+# Test files
+/.coverage
+/htmlcov/
+.cache/
+
+# Collected static files
+/staticfiles/

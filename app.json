@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "postdeploy": "make data"
+  },
+  "env": {
+    "PIPENV_COLORBLIND" : {
+      "value": "true"
+    },
+    "PIPENV_NOSPIN" : {
+      "value": "true"
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+
+    "FLASK_ENV": {
+      "required": true
+    },
+    "SECRET_KEY": {
+      "generator": "secret"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "addons": [
+    "heroku-postgresql",
+    "heroku-redis"
+  ]
+}
