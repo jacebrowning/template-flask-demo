@@ -99,9 +99,9 @@ test-backend: test-backend-all
 
 .PHONY: test-backend-unit
 test-backend-unit: install
-	@- mv $(FAILURES) $(FAILURES).bak
+	@ ( mv $(FAILURES) $(FAILURES).bak || true ) > /dev/null 2>&1
 	$(RUN) py.test $(PYTHON_PACKAGES) tests/unit
-	@- mv $(FAILURES).bak $(FAILURES)
+	@ ( mv $(FAILURES).bak $(FAILURES) || true ) > /dev/null 2>&1
 	$(RUN) coverage.space jacebrowning/template-flask-demo unit
 
 .PHONY: test-backend-integration
