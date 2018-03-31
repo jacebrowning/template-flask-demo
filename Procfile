@@ -1,2 +1,2 @@
-web: gunicorn demo_project.app:app
+web: gunicorn manage:app
 release: bin/release
