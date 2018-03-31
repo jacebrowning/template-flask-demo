@@ -1,5 +1,6 @@
 [
   "demo_project/tests/test_settings.py::describe_get_config::when_valid",
+  "demo_project/tests/test_settings.py::describe_get_config::when_extended",
   "demo_project/tests/test_settings.py::describe_get_config::when_empty",
   "demo_project/tests/test_settings.py::describe_get_config::when_unknown",
   "tests/integration/test_api_root.py::test_placeholder"
