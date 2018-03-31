@@ -137,7 +137,7 @@ export FLASK_APP=demo_project/app.py
 
 .PHONY: run
 run: install ## Run the applicaiton
-	FLASK_ENV=dev $(RUN) python manage.py runserver
+	FLASK_ENV=local $(RUN) python manage.py runserver
 
 .PHONY: run-production
 run-production: install ## Run the application (simulate production)
