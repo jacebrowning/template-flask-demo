@@ -1,4 +1,7 @@
 [
+  "demo_project/tests/test_factory.py::describe_create_app::when_dev",
+  "demo_project/tests/test_factory.py::describe_create_app::when_test",
+  "demo_project/tests/test_factory.py::describe_create_app::when_prod",
   "demo_project/tests/test_settings.py::describe_get_config::when_valid",
   "demo_project/tests/test_settings.py::describe_get_config::when_extended",
   "demo_project/tests/test_settings.py::describe_get_config::when_empty",
