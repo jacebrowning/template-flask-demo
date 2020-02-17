@@ -1,5 +1,5 @@
 # License
 
-Copyright &copy; 2018, Jace Browning
+Copyright &copy; 2020, Jace Browning
 
 All rights reserved.
